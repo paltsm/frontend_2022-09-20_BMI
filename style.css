@@ -1,0 +1,56 @@
+body{
+	margin: 0;
+	/* background-color: rgb(32, 32, 32); */
+	/* color: white; */
+	font-family: arial;
+}
+.bmi{
+	margin: auto;
+	width: min(calc(100% - 2rem),50rem);
+	
+}
+.bmi h3{
+	color: orange;
+}
+#form{
+	background-color: orange;
+	display: grid;
+	grid-template-columns: 1fr 5rem 3rem;
+	grid-template-rows: 1fr 1fr 1.5fr;
+	gap: 1rem;
+	padding: 1rem;
+}
+#form>input{
+	width: 5rem;
+	align-self: end;
+}
+#form>button{
+	width: 5rem;
+	border: none;
+	background-color: white;
+	color: orange;
+	padding: 0.3rem;
+}
+#form>p{
+	margin: 0;
+}
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+td:nth-child(1){
+	text-align: center;
+	min-width: 10rem;
+	width: 35%;
+}
+td:nth-child(2){
+	text-transform: uppercase;
+}#idealis{
+	display: flex;
+}
+
+#idealis-ertek{
+	width: 30%;
+	text-align: center;
+	color: orange;
+}

@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BMI</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
 </head>
 <body>
-    WORKING....
+	<section class="bmi">
+		<div id="form">
+			<label for="cm">Írja be cm-ben számított testmagasságát (cipő nélkül mérve):</label>
+			<input type="number" name="cm" id="cm"><p> cm</p>
+			<label for="kg">Írja be kg-ban számított testsúlyát (cipő nélkül mérve):</label>
+			<input type="number" name="kg" id="kg"><p> kg</p>
+			<button id="szamitas" type="button">Számítás</button>
+		</div>
+		<div class="ertekek">
+			<h3>AZ ÖN BMI ÉRTÉKE: </h3>
+			<table>
+				<tbody id="tablazat">
+					<tr>
+						<td>18,5 vagy kevesebb</td>
+						<td>sovány</td>
+					</tr>
+					<tr>
+						<td>18,5 - 24,9</td>
+						<td>normál</td>
+					</tr>
+					<tr>
+						<td>25 - 29,9</td>
+						<td>túlsúly</td>
+					</tr>
+					<tr>
+						<td>30 - 34,9</td>
+						<td>i. fokú elhízás</td>
+					</tr>
+					<tr>
+						<td>35 - 39,9</td>
+						<td>ii. fokú elhízás</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+
+				</tbody>
+			</table>
+		</div>
+		<div>
+			<h3 id="idealis-cim">AZ IDEÁLIS TESTTÖMEGE:</h3>
+			<div id="idealis">
+				<div id="idealis-ertek"></div>
+				<div>kívánatos szélső értékek</div>
+			</div>
+		</div>
+	</section>
 </body>
 </html>

@@ -5,7 +5,7 @@ function szamitas(){
 	let cm = document.getElementById("cm");
 	let kg = document.getElementById("kg");
 	
-	let bmi = parseFloat(kg.value)/(parseFloat(cm.value)/100)**2
+	let bmi = kg.value/(cm.value/100)**2
 	let rows=document.getElementById("tablazat").children
 
 	for (let i = 0; i < rows.length; i++) {
@@ -37,8 +37,12 @@ function szamitas(){
 	}
 
 	let idealis=(21.7*((cm.value/100)**2))
+
 	console.log(idealis)
-	document.getElementById("idealis-cim").innerText="AZ IDEÁLIS TESTTÖMEGE: "+idealis.toFixed(1)
+
+	document.getElementById("idealis-tomeg").innerText=idealis.toFixed(1)+" kg"
+
 	let ertek=(18.5*((cm.value/100)**2)).toFixed(1)+" - "+(24.9*((cm.value/100)**2)).toFixed(1)
-	document.getElementById("idealis-ertek").innerText=ertek
+	
+	document.getElementById("ertekek").innerText=ertek+" kg"
 }

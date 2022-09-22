@@ -10,51 +10,44 @@
 </head>
 <body>
 	<section class="bmi">
-		<div id="form">
+		<div id="adatok">
 			<label for="cm">Írja be cm-ben számított testmagasságát (cipő nélkül mérve):</label>
 			<input type="number" name="cm" id="cm"><p> cm</p>
 			<label for="kg">Írja be kg-ban számított testsúlyát (cipő nélkül mérve):</label>
 			<input type="number" name="kg" id="kg"><p> kg</p>
 			<button id="szamitas" type="button">Számítás</button>
 		</div>
-		<div class="ertekek">
-			<h3>AZ ÖN BMI ÉRTÉKE: </h3>
-			<table>
-				<tbody id="tablazat">
-					<tr>
-						<td>18,5 vagy kevesebb</td>
-						<td>sovány</td>
-					</tr>
-					<tr>
-						<td>18,5 - 24,9</td>
-						<td>normál</td>
-					</tr>
-					<tr>
-						<td>25 - 29,9</td>
-						<td>túlsúly</td>
-					</tr>
-					<tr>
-						<td>30 - 34,9</td>
-						<td>i. fokú elhízás</td>
-					</tr>
-					<tr>
-						<td>35 - 39,9</td>
-						<td>ii. fokú elhízás</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-					</tr>
 
-				</tbody>
-			</table>
-		</div>
-		<div>
-			<h3 id="idealis-cim">AZ IDEÁLIS TESTTÖMEGE:</h3>
-			<div id="idealis">
-				<div id="idealis-ertek"></div>
-				<div>kívánatos szélső értékek</div>
-			</div>
+		<h3>AZ ÖN BMI ÉRTÉKE: </h3>
+		<table>
+			<tbody id="tablazat">
+				<tr>
+					<td>18,5 vagy kevesebb</td>
+					<td>sovány</td>
+				</tr>
+				<tr>
+					<td>18,5 - 24,9</td>
+					<td>normál</td>
+				</tr>
+				<tr>
+					<td>25 - 29,9</td>
+					<td>túlsúly</td>
+				</tr>
+				<tr>
+					<td>30 - 34,9</td>
+					<td>i. fokú elhízás</td>
+				</tr>
+				<tr>
+					<td>35 - 39,9</td>
+					<td>ii. fokú elhízás</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h3>AZ IDEÁLIS TESTTÖMEGE: <span id="idealis-tomeg"></span> </h3>
+		<div id="szelso-ertekek">
+			<div id="ertekek"></div>
+			<div>kívánatos szélső értékek</div>
 		</div>
 	</section>
 </body>

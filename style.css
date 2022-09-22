@@ -1,7 +1,5 @@
 body{
 	margin: 0;
-	/* background-color: rgb(32, 32, 32); */
-	/* color: white; */
 	font-family: arial;
 }
 .bmi{
@@ -12,7 +10,7 @@ body{
 .bmi h3{
 	color: orange;
 }
-#form{
+#adatok{
 	background-color: orange;
 	display: grid;
 	grid-template-columns: 1fr 5rem 3rem;
@@ -20,23 +18,27 @@ body{
 	gap: 1rem;
 	padding: 1rem;
 }
-#form>input{
+#adatok>input{
 	width: 5rem;
 	align-self: end;
 }
-#form>button{
+#adatok>button{
 	width: 5rem;
 	border: none;
 	background-color: white;
 	color: orange;
 	padding: 0.3rem;
 }
-#form>p{
+#adatok>p{
 	margin: 0;
 }
 table{
-	width: 100%;
+	width: calc(100% - 6rem);
+	margin:auto;
 	border-collapse: collapse;
+}
+td{
+	padding: 1rem;
 }
 td:nth-child(1){
 	text-align: center;
@@ -45,11 +47,14 @@ td:nth-child(1){
 }
 td:nth-child(2){
 	text-transform: uppercase;
-}#idealis{
+}#szelso-ertekek{
 	display: flex;
 }
-
-#idealis-ertek{
+#idealis-tomeg{
+	font-style: italic;
+	font-weight: normal;
+}
+#ertekek{
 	width: 30%;
 	text-align: center;
 	color: orange;
